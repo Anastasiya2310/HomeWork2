@@ -1,9 +1,13 @@
-function remove(arr){
-	return arr.filter(function(elem){
-  	if(typeof elem === 'number'){
-    	return true;
+/* Напишите функцию, которая принимает список неотрицательных целых чисел и строк
+ и возвращает новый список с отфильтрованными числами (строки будут удалены) */
+
+
+function remove(arr){ //в качестве аргумента функции передаем некий массив
+	return arr.filter(function(elem){ //применяем свойство .filter(callback), где аргументом является елемент массива
+  	if(typeof elem === 'number'){ //создаем условие: если элемент массива - число (сравниваем по типу)
+    	return true; //то возвращаем истину (т.е эти элементы попадут в конечный массив)
     }
-    return false;
+    return false;// иначе - ложь
   });
 }
 console.log(remove([1, 2, 'a', 'b']));
