@@ -4,13 +4,13 @@
 
 function contains(where, what) {
 	return what.every(function(item){ //перебираем каждый элемент массива what (особенность в том, что every сработает только при true для каждого элемента)
-  	for(var i = 0; i < where.length; ++i) { 
-    	if(item === where[i]) {// если элемент равен элементу из массива where, то 
-      	return true; //возвращаем истину
-      }
-    }
-    return false;
-  });
+	  	for(var i = 0; i < where.length; ++i) { 
+	    	if(item === where[i]) {// если элемент равен элементу из массива where, то 
+	      		return true; //возвращаем истину
+	      	}
+	    }
+    	return false;
+	});
 }
 
 console.log(contains([1,2,3], [3,2]));

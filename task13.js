@@ -7,9 +7,9 @@ createObject(['foo', 'extra'], ['bar']); // {foo: 'bar', extra: undefined} */
 function createObject(arrOfKeys, arrOfData) {
 	var obj = {};
   for(var i = 0; i < arrOfKeys.length; ++i) { // перебираем элементы массива arrOfKeys
-  	var prop = arrOfKeys[i]; //свойства объекта - элемент из массива arrOfKeys
+    var prop = arrOfKeys[i]; //свойства объекта - элемент из массива arrOfKeys
   	if(i >= arrOfData.length) {// если индекс элемента первого массива больше длины второго массива
-    	obj[prop] = undefined;// то пропущенные элементы принимают значение undefined
+      obj[prop] = undefined;// то пропущенные элементы принимают значение undefined
     } else {
     	obj[prop] = arrOfData[i];// иначе в качестве ключа берем элемент первого массива, а в качестве значения - элемент второго массива
     }

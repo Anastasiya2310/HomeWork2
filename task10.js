@@ -15,10 +15,10 @@ function pick(obj, keys){ //передаем объект и массив стр
   return newObject;// возвращаем созданный нами объект
 }
 var user = {
-		name: "Sergey",
-    age: 30,
-    email:'sergey@gmail.com',
-    friends: ["Anna", "Sveta"]
+	name: "Sergey",
+  age: 30,
+  email:'sergey@gmail.com',
+  friends: ["Anna", "Sveta"]
 };
 console.log(pick(user, ['name']));
 console.log(pick(user, ['name', "second-name"]));
